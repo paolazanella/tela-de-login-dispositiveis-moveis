@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApp"
         tools:targetApi="31">
+
         <activity
             android:name=".terceiraTelaActivity"
             android:exported="false" />

@@ -16,9 +16,13 @@ class terceiraTelaActivity : AppCompatActivity() {
     lateinit var btn: Button
     lateinit var img: ImageView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_terceira_tela)
+
+        img = findViewById(R.id.imagem)
+        img.setImageResource(R.drawable.mcqueen)
 
         btn = findViewById(R.id.tirar_foto_btn)
         img = findViewById(R.id.imagem)

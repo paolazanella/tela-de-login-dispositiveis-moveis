@@ -41,7 +41,7 @@ class homeActivity : AppCompatActivity() {
             val senha = passwordInput.text.toString()
 
             if (username == CORRECT_CPF && senha == CORRECT_SENHA) {
-                val intent = Intent(this, camera::class.java)
+                val intent = Intent(this, terceiraTelaActivity::class.java)
                 intent.putExtra("CPF", username) // Adiciona o CPF como extra na Intent
                 startActivity(intent)
             }else {mostrarAlertaInformativo()}

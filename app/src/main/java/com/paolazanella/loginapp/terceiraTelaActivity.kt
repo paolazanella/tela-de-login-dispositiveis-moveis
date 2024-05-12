@@ -9,6 +9,7 @@ import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 
@@ -16,6 +17,8 @@ class terceiraTelaActivity : AppCompatActivity() {
 
     lateinit var btn: Button
     lateinit var img: ImageView
+    lateinit var cpfTextView: TextView //Declarar a TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +26,16 @@ class terceiraTelaActivity : AppCompatActivity() {
 
         img = findViewById(R.id.imagem)
         img.setImageResource(R.drawable.mcqueen)
+        cpfTextView = findViewById(R.id.cpf_value_textview1)
+
+
+        // Obtém o CPF do extra da Intent
+        val cpf = intent.getStringExtra("CPF")
+        val cpfFormatado = cpf?.formatarCPF() ?: ""
+
+        // Define o CPF formatado na TextView
+        cpfTextView.text = cpfFormatado
+
 
         btn = findViewById(R.id.tirar_foto_btn)
         btn.setOnClickListener {
@@ -35,7 +48,9 @@ class terceiraTelaActivity : AppCompatActivity() {
         btnSeleciarFoto.setOnClickListener {
             abrirGallery()
         }
+
     }
+
 
     private val resultContract =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -63,6 +78,14 @@ class terceiraTelaActivity : AppCompatActivity() {
     private fun abrirGallery(){
         val galeria = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI )
         resultContractGaçeria.launch(galeria)
+    }
+
+    fun String.formatarCPF(): String {
+        return if (length == 11) {
+            "${substring(0, 3)}.${substring(3, 6)}.${substring(6, 9)}-${substring(9)}"
+        } else {
+            this
+        }
     }
 }
 

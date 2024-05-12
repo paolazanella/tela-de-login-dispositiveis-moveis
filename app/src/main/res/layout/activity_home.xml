@@ -18,8 +18,8 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
             android:src="@drawable/tela_principal" />
 
         <EditText
@@ -63,10 +63,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:backgroundTint="#507AE3"
+            android:backgroundTint="#F1F3EB"
+
             android:padding="18dp"
             android:text="Login"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
     </LinearLayout>

@@ -13,13 +13,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="center_horizontal"
        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:src="@drawable/main" />
+            android:src="@drawable/main"
+            android:visibility="visible" />
 
         <TextView
             android:id="@+id/title_textview"
@@ -28,30 +29,22 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Bem-vindo ao NiceApp!"
+            android:textColor="#050505"
             android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:backgroundTint="#507AE3"
+            android:backgroundTint="@color/white"
             android:padding="18dp"
             android:text="Login"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <ProgressBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/loginProgressBar"
-            android:indeterminateTint="@color/white"
-            android:indeterminate="true"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:visibility="invisible"
-            android:layout_marginTop="20dp"/>
+
     </LinearLayout>
 
 </RelativeLayout>

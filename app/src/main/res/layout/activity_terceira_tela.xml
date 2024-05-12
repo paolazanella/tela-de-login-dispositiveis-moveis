@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:padding="16dp"
-    android:background="@drawable/login_background"
+    android:background="@drawable/tela_3"
     tools:context=".terceiraTelaActivity">
 
     <LinearLayout
@@ -61,11 +61,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cpf_value_textview"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="#507AE3"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
                 android:padding="18dp"
                 android:text="Selecionar Imagem"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="italic"/>
 
@@ -76,10 +76,10 @@
                 android:layout_below="@id/select_image_button"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="#507AE3"
+                android:backgroundTint="@color/white"
                 android:padding="18dp"
                 android:text="Tirar Foto"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="italic" />
 

@@ -26,7 +26,7 @@ class terceiraTelaActivity : AppCompatActivity() {
 
         img = findViewById(R.id.imagem)
         img.setImageResource(R.drawable.mcqueen)
-        cpfTextView = findViewById(R.id.cpf_value_textview1)
+        cpfTextView = findViewById(R.id.cpf_value_textview)
 
 
         // Obtém o CPF do extra da Intent

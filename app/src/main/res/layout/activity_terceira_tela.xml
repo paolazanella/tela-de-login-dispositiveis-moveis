@@ -32,10 +32,10 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/cpf_value_textview1"
+                android:id="@+id/cpf_value_textview"
                 android:layout_width="166dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cpf_textview"
+                android:layout_below="@id/cpf_value_textview"
                 android:text=" 123.456.789-00"
                 android:textColor="@color/white"
                 android:textSize="21sp" />
@@ -67,7 +67,7 @@
                 android:text="Selecionar Imagem"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:textStyle="italic" />
+                android:textStyle="italic"/>
 
             <Button
                 android:id="@+id/tirar_foto_btn"

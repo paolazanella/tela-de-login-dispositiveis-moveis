@@ -20,7 +20,7 @@
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:src="@drawable/icon_accout_circle" />
+            android:src="@drawable/tela_principal" />
 
         <EditText
             android:id="@+id/cpf_input"
@@ -70,4 +70,6 @@
             android:textSize="20sp" />
 
     </LinearLayout>
+
+
 </RelativeLayout>

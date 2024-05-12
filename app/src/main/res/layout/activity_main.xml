@@ -17,9 +17,9 @@
        android:orientation="vertical">
 
         <ImageView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/icon_accout_circle" />
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/main" />
 
         <TextView
             android:id="@+id/title_textview"

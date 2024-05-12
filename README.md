@@ -25,8 +25,14 @@ A **Empty Views Activity** pode ser adicionada no Android Studio seguindo os seg
 3. A Empty Views Activity será adicionada ao seu projeto.
 
 ## Captura de Tela das Configurações do Projeto
-
 ![Captura de Tela das Configurações do Projeto](https://github.com/paolazanella/tela-de-login-dispositiveis-moveis/assets/103282431/1d7becf7-2997-4e43-bbb9-67de243d5c4f)
+
+__Emulador Utilizado__
+
+![image](https://github.com/paolazanella/tela-de-login-dispositiveis-moveis/assets/103282431/7291267f-7748-42f4-8598-c34caef8795e)
+![image](https://github.com/paolazanella/tela-de-login-dispositiveis-moveis/assets/103282431/6e3bd46e-8c31-4704-9e24-3108c29005d3)
+
+
 
 ## Tecnologias Utilizadas
 

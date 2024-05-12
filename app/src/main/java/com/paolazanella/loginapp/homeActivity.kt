@@ -6,6 +6,7 @@ import android.text.InputType
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AlertDialog
@@ -17,6 +18,7 @@ class homeActivity : AppCompatActivity() {
     lateinit var cpfInput: EditText
     lateinit var passwordInput: EditText // Corrigindo o nome da variável
     lateinit var loginBtn: Button
+    lateinit var cpfTextView: TextView
 
     // Credenciais corretas
     val CORRECT_CPF = "08993356912"
@@ -31,14 +33,18 @@ class homeActivity : AppCompatActivity() {
         cpfInput = findViewById(R.id.cpf_input)
         passwordInput = findViewById(R.id.password_input)
         loginBtn = findViewById(R.id.login_btn)
+        cpfTextView = findViewById(R.id.cpf_input)
+
 
         loginBtn.setOnClickListener{
             val username= cpfInput.text.toString()
             val senha = passwordInput.text.toString()
 
-            if (username == CORRECT_CPF && senha == CORRECT_SENHA){
-                TerceiraTela()
-            } else {mostrarAlertaInformativo()}
+            if (username == CORRECT_CPF && senha == CORRECT_SENHA) {
+                val intent = Intent(this, camera::class.java)
+                intent.putExtra("CPF", username) // Adiciona o CPF como extra na Intent
+                startActivity(intent)
+            }else {mostrarAlertaInformativo()}
         }
 
         val mostrarSenhaCheckbox = findViewById<CheckBox>(R.id.ckb_mostrar_senha)
@@ -50,7 +56,7 @@ class homeActivity : AppCompatActivity() {
 
     }
     private fun TerceiraTela(){
-        val terceiraTela = Intent(this, terceiraTelaActivity::class.java)
+        val terceiraTela = Intent(this, camera::class.java)
         startActivity(terceiraTela)
     }
 

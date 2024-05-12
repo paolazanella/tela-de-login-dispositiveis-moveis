@@ -50,7 +50,7 @@ class homeActivity : AppCompatActivity() {
 
     }
     private fun TerceiraTela(){
-        val terceiraTela = Intent(this, terceiraTelaActivity::class.java)
+        val terceiraTela = Intent(this, camera::class.java)
         startActivity(terceiraTela)
     }
 
